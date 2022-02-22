@@ -217,6 +217,8 @@ def load_mars_labs(case_id, root, mars_names, time_cut):
     else:
         return [False, False, False, False, False]
 
+    
+############# Having trouble adapting following code (delimited by pound signs) to mimic data #################
 
 def load_bp(case_id, time_cut, rollnames):
     curr_data = [[], [], [], []]
@@ -286,6 +288,7 @@ def load_vent(case_id, time_cut, ventnames):
         recent_results[i] = recent_result[1]
     return [curr_data, curr_names, recent_results]
 
+########################################################################################################
 
 def load_io(case_id, time_cut):
     curr_data = [[], [], [], [], [], [], []]  # urine, everything else, oral, intravenous, blood products, other, net
