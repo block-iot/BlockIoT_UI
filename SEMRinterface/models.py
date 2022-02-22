@@ -45,11 +45,11 @@ class a_ClinicalEvents(models.Model):
 class a_demographics(models.Model):
     patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
     age = models.IntegerField(null=True, db_column='Age', blank=True)
-    height = models.FloatField(null=True, db_column='Height', blank=True)
+    religion = models.CharField(max_length=35, db_column='Height', blank=True)
     weight = models.FloatField(null=True, db_column='Weight', blank=True)
     bmi = models.FloatField(null=True, db_column='BMI', blank=True)
     sex = models.CharField(max_length=1, db_column='Sex', blank=True)
-    race = models.CharField(max_length=35, db_column='RaceComposite', blank=True)
+    ethnicity = models.CharField(max_length=35, db_column='RaceComposite', blank=True)
     class Meta:
         db_table = u'a_demographics'
 
@@ -229,4 +229,5 @@ class displayparams(models.Model):
     unitsdefault = models.CharField(max_length=8, db_column='unitsDefault')
     class Meta:
         db_table = u'displayparams'
+
 
