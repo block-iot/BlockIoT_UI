@@ -151,7 +151,10 @@ class a_Surgical(models.Model):
         unique_together = (("patientvisitid", "date"),)
         db_table = u'a_Surgical'
 
-
+        
+        
+####### This is where I am having trouble modifying the source code to accomodate mimic data ############
+####### See also: loaddata.py for additional notes ######################################################
 class a_Ventilator(models.Model):
     patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
     date = models.IntegerField(null=False, db_column='EventDate')
