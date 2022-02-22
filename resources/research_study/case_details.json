@@ -1,0 +1,5 @@
+{
+"10000101": [{"min_t": 5679003600.0, "max_t":  5680237800.0, "check_boxes": 0, "instruction_set": "familiar"}, {"min_t": 5679003600.0, "max_t":  5680237800.0, "check_boxes": 1, "instruction_set": "select"}],
+"10000102": [{"min_t": 6686388900.0, "max_t": 6687032400.0, "check_boxes": 0, "instruction_set": "familiar"}, {"min_t": 6686388900.0, "max_t": 6687032400.0, "check_boxes": 1, "instruction_set": "select"}],
+"10000103": [{"min_t": 1341394860000.0, "max_t": 1341567660000.0, "check_boxes": 0, "instruction_set": "familiar"}, {"min_t": 1341394860000.0, "max_t": 1341654060000.0, "check_boxes": 1, "instruction_set": "select"}]
+}
