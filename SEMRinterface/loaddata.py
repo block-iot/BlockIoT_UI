@@ -116,8 +116,8 @@ def load_demographics(case_id):
         sex = 'M'
     else:
         sex = result.sex
-    return [{"id": case_id, "age": result.age, "sex": result.sex, "height": result.height,
-            "weight": result.weight, "bmi": result.bmi, "race": result.race}, sex]
+    return [{"id": case_id, "age": result.age, "sex": result.sex, "religion": result.religion,
+            "weight": result.weight, "bmi": result.bmi, "ethnicity": result.ethnicity}, sex]
 
 
 def load_clinical_event(case_id, event_name, time_cut):
@@ -362,18 +362,28 @@ def load_meds(case_id, time_cut):
     order_curr_text = {}
     # meds
     if run_queries:
+        #retrieve medications table values for given case
         results = a_Medication.objects.using('remote').filter(patientvisitid=case_id)
         save_query(results, 'med')
     else:
         results = load_query('med')
     order_names = []
+    #results = df using only entries corresponding to the given case
     for result in results:
+        #for each medication in the list of medications
+        #input time as date formated as time
         t = (time.mktime(result.date.timetuple()) - 18000) * 1000
+        #if time is less than the time cut
         if t < time_cut:
+            #order_as is a tuple containing the orderedas value and the route
             order_as = (uni_norm(result.orderedas), result.route)
+            #if order_as not in list of order_names
             if order_as not in order_names:
+                #add order_as tuple to order_names
                 order_names.append(order_as)
+                #make sure that the indexes are equivalent
                 assert (len(order_names)-1 == order_names.index(order_as))
+                #the index corresponding to a given order_name entry is a list of the time(twice), the route, the normalized orderas, and the normalazed name
                 orders[len(order_names)-1] = [t, t, result.route, uni_norm(result.orderedas), uni_norm(result.name)]
                 order_curr_data[len(order_names)-1] = [[t, float(result.resultval)]]
                 order_curr_text[len(order_names)-1] = [val_unit_split(uni_norm(result.event))]
@@ -713,7 +723,7 @@ def load_case_date(case_id, out_folder='all/', time_cut=1451688581000):
     micro_report_dict = load_micro_reports(case_id, time_cut)
 
     note_types = ['OP', 'RAD', 'EKG', 'PGN', 'HP']
-    rare_types = ['EMG', 'ER', 'LETT', 'PULM', 'CATH', 'NUCLEAR', 'CARD', 'MDX', 'EEG', 'PVL', 'CMORE', 'SP', 'ECHO']
+    rare_types = ['EMG', 'ER', 'LETT', 'PULM', 'CATH', 'NUCLEAR', 'CARD', 'MDX', 'EEG', 'PVL', 'CMORE', 'SP', 'ECHO', "Visit Summary"]
     out_dir = local_dir + 'evaluation_study/' + out_folder
 
     if save_notes:  # save notes
