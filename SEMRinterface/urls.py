@@ -22,7 +22,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with SimpleEMRSystem.  If not, see <https://www.gnu.org/licenses/>.
 """
-from django.conf.urls import url
+from django.urls import re_path as url
 from . import views
 
 # nothing is for home screen
