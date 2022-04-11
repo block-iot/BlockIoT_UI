@@ -21,16 +21,34 @@
     <script src="/static/js/emr_3.js"></script>
 </head>
 <body>
-<div class="glyphicon glyphicon-refresh" id="loading_new_patient"></div> <!-- this glyphicon blurrs the screen on loading -->
+<!--<div class="glyphicon glyphicon-refresh" id="loading_new_patient"></div>--><!-- this glyphicon blurrs the screen on loading -->
 <div class="container">
-<!-- Introduction popup -->
+<!--Introduction popup-->
 	<div id="directions" class="center-div"><h4>Patient: {{ case_id }}.
 	</h4><h4>{% date_line dict_case_details time_step %}
 	</h4><h4> '{{ instructions }}'
 	</h4>
 		<input id="directions_button" type="button"  value="Okay" onclick="remove_directions()" disabled>
 	</div>
+<script> 
+	/*show_directions();*/
+	/*show_directions();*/
+	/*const center_div = document.querySelector('.center_div')
+	
+	
+	jQuery(document).ready(function(){
+    	window.addEventListener("load", function (){
+        	setTimeout(function() {
+				center_div.style.display = "block";
+			}, 4000)
+		} )
+	});*/
+</script>
 <!-- end of Introduction popup -->
+
+	<div class="popuptest" id="popup">
+		<div id="chart_container"></div>
+	</div>
 
 <!-- Demographics bar -->
 <div class="row">
@@ -233,7 +251,9 @@
 			{{ instructions }}
 			{{content}}
 				<hr>Then click
-				<input id='next_screen_button' type="button" value="continue" onclick="link_advance();"></input>
+				<input type="button" value="replay"  onclick="replay(0)"></input>
+				
+				<!--<input id='next_screen_button' type="button" value="continue" onclick="link_advance();"></input>-->
 			</div>
 		</div>
 	</div>

@@ -1,4 +1,60 @@
 {
+  "1649174088": {
+    "display_group": "Vitals",
+    "display_name": "Heart Rate",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      0
+    ],
+    "original_name": "Heart Rate",
+    "units": ""
+  },
+  "1649174089": {
+    "display_group": "Vitals",
+    "display_name": "Blood Glucose",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      0
+    ],
+    "original_name": "Blood Glucose",
+    "units": ""
+  },
+  "1649174090": {
+    "display_group": "Vitals",
+    "display_name": "Systolic BP",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      0
+    ],
+    "original_name": "Systolic BP",
+    "units": ""
+  },
+  "1649174091": {
+    "display_group": "Vitals",
+    "display_name": "Diastolic BP",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      0
+    ],
+    "original_name": "Diastolic BP",
+    "units": ""
+  },
   "51346": {
     "display_group": "Hematology",
     "display_name": "Blasts",

@@ -15,8 +15,18 @@ var study_id;
 var user_id;
 var case_id;
 
+window.localStorage.setItem('firstVisit', '1');
+
+/*const center_div = document.querySelector('.center_div');*/
+
 // Page loading activites //
 $(document).ready(function () { 
+    /*
+    window.addEventListener("load", function (){
+        setTimeout(function() {
+			center_div.style.display = "block";
+		}, 4000)
+	} );*/
     var navHeight = $('.navbar').outerHeight(true) + 10;
     $(document.body).scrollspy({
         target: '.bs-sidebar',
@@ -38,7 +48,13 @@ $(document).ready(function () {
 
     $('#directions_button').removeAttr("disabled");
     $('#break_button').removeAttr("disabled");
+    
 
+    
+    if(window.localStorage.getItem('firstVisit')){
+        show_directions();
+        /*sessionStorage.setItem('firstVisit', '1');*/ 
+    }
 });
 
 function getCookie(name) {
@@ -63,10 +79,27 @@ function show_loading(){
     $('#loading_new_patient').show();
 }
 
+/*const center_div = $(document).querySelector('.center_div');*/
+function show_directions() {
+    if (window.localStorage.getItem('firstVisit')) {
+        setTimeout(function() {
+            $('#directions').show();
+        }, 2000);
+    }
+    else {
+        $('#directions').hide();
+        $('#loading_new_patient').hide();
+    }
+    
+}
 // Removes directions div and hides loading text // 
 function remove_directions(){
     $('#directions').hide();
     $('#loading_new_patient').hide();
+    var remove = 'firstVisit';
+    window.localStorage.removeItem(remove);
+    window.localStorage.clear();
+    /*window.sessionStorage.setItem('firstVisit', '0');*/
 }
 
 // function to save case detials //
@@ -368,10 +401,15 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
             spacingTop: 6,
             spacingRight: 6,
             type: 'scatter',
+            zoomType: 'x',
             events: {
                 click: function () {
-                    this.tooltip.hide();
+                    this.tooltip.hide();/*
+                    $(chart_container_id).toggleClass('popup');
+                    currChart.reflow();*/
                 }
+
+
             }
         },
         credits: {
@@ -417,6 +455,14 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
         ],
         series: chart_data,
         plotOptions: {
+            states: {
+                hover: {
+                  brightness: 0,
+                  halo: {
+                    opacity: 1
+                  }
+                }
+            },
             series: { point: { events: { click: function () { add_vertical_point(this.x); }}}}
         }, tooltip: {
             shared: false,
@@ -439,9 +485,50 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
             crosshairs: [false, false]
         }
     });
+
+    const element = document.getElementById(chart_container_id);
+    element.addEventListener("click", myFunction);
+    const popup = document.getElementById("popup")
+    popup.addEventListener("click", function() {
+        popup.style.display = "none";
+    });
+    function myFunction() {
+        popup.style.display = popup.style.display == "none" ? "block" : "none";
+        var dispChart = new Highcharts.Chart('chart_container', currChart.options);
+        dispChart.update({
+            chart: {
+                height: 400,
+                borderWidth: 10,
+                borderRadius: 5,
+                borderColor: "white",
+                plotBorderWidth: 2,
+                spacingLeft: 50,
+                spacingBottom: 24,
+                spacingTop: 24,
+                spacingRight: 24
+            },
+            title: {style: {"fontSize": "18px"}},
+            yAxis: {
+                title: {
+                    text: observation_details.units,
+                    fontSize: 30
+                },
+                labels: {
+                    style: {
+                        fontSize: 16
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            }
+        });
+    }
+
     chartsContainers.push(currChart);
     chartrowids.push(chart_container_id);
 }
+
 
 // Creat med chart helper //
 function add_medication_chart(obs_id, medication_details, med_details){
@@ -540,6 +627,41 @@ function get_med_chart(chart_container_id, medication_details, med_details) {
             crosshairs: [false, false]
         }
     });
+
+    const element = document.getElementById(chart_container_id);
+    element.addEventListener("click", myFunction);
+    const popup = document.getElementById("popup");
+    popup.addEventListener("click", function() {
+        popup.style.display = "none";
+    });
+    function myFunction() {
+        popup.style.display = popup.style.display == "none" ? "block" : "none";
+        var dispChart = new Highcharts.Chart('chart_container', currChart.options);
+        dispChart.update({
+            chart: {
+                height: chart_height*4,
+                borderWidth: 10,
+                borderRadius: 5,
+                borderColor: "white",
+                plotBorderWidth: 2,
+                spacingLeft: 50,
+                spacingBottom: 24,
+                spacingTop: 24,
+                spacingRight: 24
+            },
+            title: {style: {"fontSize": "18px"}},
+            yAxis: {
+                labels: {
+                    style: {
+                        fontSize: 16
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            }
+        });
+    }
     chartsContainers.push(currChart);
     chartrowids.push(chart_container_id);
 }
@@ -692,6 +814,49 @@ function create_selection_screen(){
     });
     $('.shower').show();
 }
+/*
+var arrayWithElements = new Array(),replaytimer;
+
+document.onclick = clickListener;
+function replay(i)
+{
+  clearTimeout(replaytimer);        
+  if(!arrayWithElements.length)return;
+  if(i>0)
+  {
+    document.getElementsByTagName(arrayWithElements[i-1].tag)[arrayWithElements[i-1].index].style.border="none";
+    document.getElementsByTagName(arrayWithElements[i-1].tag)[arrayWithElements[i-1].index].style.backgroundColor="rgb(255, 255, 255)";
+  }
+  document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.border="3px solid rgba(0, 255, 208, 0.4)";
+  document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.backgroundColor="rgba(0, 255, 208, 0.4)";
+  if(arrayWithElements.length>i+1)
+  {
+    replaytimer=setTimeout(function(){replay(i+1);},1000)
+  }
+  else(arrayWithElements.length>i+1)
+  {
+    replaytimer=setTimeout(function(){document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.border="none";document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.backgroundColor="rgb(255, 255, 255)";},1000)
+  }
+}
+
+function clickListener(e) 
+{   
+    var clickedElement=(window.event)
+                        ? window.event.srcElement
+                        : e.target,
+        tags=document.getElementsByTagName(clickedElement.tagName);
+                         
+    for(var i=0;i<tags.length;++i)
+    {
+      if(tags[i]==clickedElement)
+      {
+        arrayWithElements.push({tag:clickedElement.tagName,index:i}); 
+        //console.log(arrayWithElements);
+      }    
+    }
+}
+*/
+
 
 // fin //
 

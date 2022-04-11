@@ -62,7 +62,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "ng/ml",
     "discrete_nominal_to_yIndex": []
   },
   "51006": {
@@ -111,7 +111,7 @@
       15.0,
       26.0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "51146": {
@@ -140,7 +140,7 @@
       0.3,
       0.3
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "51200": {
@@ -169,7 +169,7 @@
       1.7,
       1.7
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "51221": {
@@ -218,7 +218,7 @@
       33.7,
       42.3
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "51222": {
@@ -263,7 +263,7 @@
       11.7,
       14.9
     ],
-    "units": "",
+    "units": "g/dL",
     "discrete_nominal_to_yIndex": []
   },
   "51237": {
@@ -321,7 +321,7 @@
       16.6,
       16.6
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "51248": {
@@ -366,7 +366,7 @@
       28.4,
       29.0
     ],
-    "units": "",
+    "units": "pg",
     "discrete_nominal_to_yIndex": []
   },
   "51249": {
@@ -411,7 +411,7 @@
       32.9,
       35.2
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "51250": {
@@ -456,7 +456,7 @@
       82.0,
       86.0
     ],
-    "units": "",
+    "units": "fL",
     "discrete_nominal_to_yIndex": []
   },
   "51254": {
@@ -485,7 +485,7 @@
       7.4,
       7.4
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "51256": {
@@ -514,7 +514,7 @@
       73.9,
       73.9
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "51265": {
@@ -559,7 +559,7 @@
       184.0,
       232.0
     ],
-    "units": "",
+    "units": "K/uL",
     "discrete_nominal_to_yIndex": []
   },
   "51274": {
@@ -588,7 +588,7 @@
       11.7,
       11.7
     ],
-    "units": "",
+    "units": "SECONDS",
     "discrete_nominal_to_yIndex": []
   },
   "51275": {
@@ -617,7 +617,7 @@
       23.7,
       23.7
     ],
-    "units": "",
+    "units": "sec",
     "discrete_nominal_to_yIndex": []
   },
   "51277": {
@@ -662,7 +662,7 @@
       12.8,
       13.8
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "51279": {
@@ -707,7 +707,7 @@
       4.07,
       5.19
     ],
-    "units": "",
+    "units": "m/uL",
     "discrete_nominal_to_yIndex": []
   },
   "51301": {
@@ -752,7 +752,7 @@
       6.2,
       11.1
     ],
-    "units": "",
+    "units": "K/uL",
     "discrete_nominal_to_yIndex": []
   },
   "51071": {
@@ -1013,7 +1013,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "EU/dL",
     "discrete_nominal_to_yIndex": []
   },
   "51466": {
@@ -1042,7 +1042,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "51476": {
@@ -1071,7 +1071,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "#/hpf",
     "discrete_nominal_to_yIndex": []
   },
   "51478": {
@@ -1100,7 +1100,7 @@
       250.0,
       250.0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "51484": {
@@ -1129,7 +1129,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "51486": {
@@ -1216,7 +1216,7 @@
       7.5,
       7.5
     ],
-    "units": "",
+    "units": "units",
     "discrete_nominal_to_yIndex": []
   },
   "51492": {
@@ -1245,7 +1245,7 @@
       100.0,
       100.0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "51493": {
@@ -1274,7 +1274,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "#/hpf",
     "discrete_nominal_to_yIndex": []
   },
   "51498": {
@@ -1303,7 +1303,7 @@
       1.02,
       1.02
     ],
-    "units": "",
+    "units": " ",
     "discrete_nominal_to_yIndex": []
   },
   "51506": {
@@ -1419,7 +1419,7 @@
       0.2,
       0.2
     ],
-    "units": "",
+    "units": "EU/dL",
     "discrete_nominal_to_yIndex": []
   },
   "51516": {
@@ -1448,7 +1448,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "#/hpf",
     "discrete_nominal_to_yIndex": []
   },
   "51519": {
@@ -1555,7 +1555,7 @@
       12.0,
       17.0
     ],
-    "units": "",
+    "units": "mEq/L",
     "discrete_nominal_to_yIndex": []
   },
   "50882": {
@@ -1604,7 +1604,7 @@
       23.0,
       25.0
     ],
-    "units": "",
+    "units": "mEq/L",
     "discrete_nominal_to_yIndex": []
   },
   "50902": {
@@ -1653,7 +1653,7 @@
       103.0,
       111.0
     ],
-    "units": "",
+    "units": "mEq/L",
     "discrete_nominal_to_yIndex": []
   },
   "50912": {
@@ -1702,7 +1702,7 @@
       1.6,
       1.8
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50931": {
@@ -1751,7 +1751,7 @@
       62.0,
       243.0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50971": {
@@ -1804,7 +1804,7 @@
       3.7,
       6.2
     ],
-    "units": "",
+    "units": "mEq/L",
     "discrete_nominal_to_yIndex": []
   },
   "50983": {
@@ -1853,7 +1853,7 @@
       137.0,
       146.0
     ],
-    "units": "",
+    "units": "mEq/L",
     "discrete_nominal_to_yIndex": []
   },
   "50911": {
@@ -1890,7 +1890,7 @@
       2.0,
       3.0
     ],
-    "units": "",
+    "units": "ng/mL",
     "discrete_nominal_to_yIndex": []
   },
   "50852": {
@@ -1919,7 +1919,7 @@
       6.6,
       6.6
     ],
-    "units": "",
+    "units": "%",
     "discrete_nominal_to_yIndex": []
   },
   "50910": {
@@ -1952,7 +1952,7 @@
       213.0,
       344.0
     ],
-    "units": "",
+    "units": "IU/L",
     "discrete_nominal_to_yIndex": []
   },
   "50956": {
@@ -1985,7 +1985,7 @@
       47.0,
       96.0
     ],
-    "units": "",
+    "units": "IU/L",
     "discrete_nominal_to_yIndex": []
   },
   "50960": {
@@ -2022,7 +2022,7 @@
       1.6,
       1.9
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50970": {
@@ -2059,7 +2059,7 @@
       3.9,
       4.6
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50856": {
@@ -2088,7 +2088,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "ug/mL",
     "discrete_nominal_to_yIndex": []
   },
   "50861": {
@@ -2117,7 +2117,7 @@
       26.0,
       26.0
     ],
-    "units": "",
+    "units": "IU/L",
     "discrete_nominal_to_yIndex": []
   },
   "50862": {
@@ -2146,7 +2146,7 @@
       4.5,
       4.5
     ],
-    "units": "",
+    "units": "g/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50863": {
@@ -2175,7 +2175,7 @@
       95.0,
       95.0
     ],
-    "units": "",
+    "units": "IU/L",
     "discrete_nominal_to_yIndex": []
   },
   "50867": {
@@ -2204,7 +2204,7 @@
       69.0,
       69.0
     ],
-    "units": "",
+    "units": "IU/L",
     "discrete_nominal_to_yIndex": []
   },
   "50878": {
@@ -2233,7 +2233,7 @@
       34.0,
       34.0
     ],
-    "units": "",
+    "units": "IU/L",
     "discrete_nominal_to_yIndex": []
   },
   "50879": {
@@ -2320,7 +2320,7 @@
       0.5,
       0.5
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50922": {
@@ -2349,7 +2349,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50933": {
@@ -2407,7 +2407,7 @@
       0,
       0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50800": {
@@ -2465,7 +2465,7 @@
       1.0,
       1.0
     ],
-    "units": "",
+    "units": "mEq/L",
     "discrete_nominal_to_yIndex": []
   },
   "50804": {
@@ -2494,7 +2494,7 @@
       27.0,
       27.0
     ],
-    "units": "",
+    "units": "mEq/L",
     "discrete_nominal_to_yIndex": []
   },
   "50809": {
@@ -2523,7 +2523,7 @@
       75.0,
       75.0
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   },
   "50817": {
@@ -2581,7 +2581,7 @@
       41.0,
       41.0
     ],
-    "units": "",
+    "units": "mm Hg",
     "discrete_nominal_to_yIndex": []
   },
   "50820": {
@@ -2610,7 +2610,7 @@
       7.41,
       7.41
     ],
-    "units": "",
+    "units": "units",
     "discrete_nominal_to_yIndex": []
   },
   "50821": {
@@ -2639,7 +2639,7 @@
       121.0,
       121.0
     ],
-    "units": "",
+    "units": "mm Hg",
     "discrete_nominal_to_yIndex": []
   },
   "50893": {
@@ -2672,7 +2672,7 @@
       8.8,
       9.2
     ],
-    "units": "",
+    "units": "mg/dL",
     "discrete_nominal_to_yIndex": []
   }
 }
