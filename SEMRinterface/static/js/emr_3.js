@@ -15,18 +15,14 @@ var study_id;
 var user_id;
 var case_id;
 
-window.localStorage.setItem('firstVisit', '1');
+var firstVisit = window.sessionStorage.getItem('firstVisit');
+var nextCase = window.sessionStorage.getItem('nextCase');
 
 /*const center_div = document.querySelector('.center_div');*/
 
 // Page loading activites //
 $(document).ready(function () { 
-    /*
-    window.addEventListener("load", function (){
-        setTimeout(function() {
-			center_div.style.display = "block";
-		}, 4000)
-	} );*/
+
     var navHeight = $('.navbar').outerHeight(true) + 10;
     $(document.body).scrollspy({
         target: '.bs-sidebar',
@@ -49,12 +45,6 @@ $(document).ready(function () {
     $('#directions_button').removeAttr("disabled");
     $('#break_button').removeAttr("disabled");
     
-
-    
-    if(window.localStorage.getItem('firstVisit')){
-        show_directions();
-        /*sessionStorage.setItem('firstVisit', '1');*/ 
-    }
 });
 
 function getCookie(name) {
@@ -81,24 +71,15 @@ function show_loading(){
 
 /*const center_div = $(document).querySelector('.center_div');*/
 function show_directions() {
-    if (window.localStorage.getItem('firstVisit')) {
-        setTimeout(function() {
-            $('#directions').show();
-        }, 2000);
-    }
-    else {
-        $('#directions').hide();
-        $('#loading_new_patient').hide();
-    }
-    
+    $('#directions').show();
+
+    window.sessionStorage.setItem('firstVisit', '0');
 }
+
 // Removes directions div and hides loading text // 
 function remove_directions(){
     $('#directions').hide();
     $('#loading_new_patient').hide();
-    var remove = 'firstVisit';
-    window.localStorage.removeItem(remove);
-    window.localStorage.clear();
     /*window.sessionStorage.setItem('firstVisit', '0');*/
 }
 
@@ -109,6 +90,10 @@ function set_case_details(details, s_id, u_id, c_id, t_s){
 	study_id = s_id;
 	user_id = u_id;
 	case_id = c_id;
+    if(!(nextCase==case_id)){
+        show_directions();
+        window.sessionStorage.setItem('nextCase', case_id.toString());
+    };
 }
 
 // function to save case compelte url //
@@ -404,9 +389,7 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
             zoomType: 'x',
             events: {
                 click: function () {
-                    this.tooltip.hide();/*
-                    $(chart_container_id).toggleClass('popup');
-                    currChart.reflow();*/
+                    this.tooltip.hide();
                 }
 
 
@@ -485,7 +468,31 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
             crosshairs: [false, false]
         }
     });
-
+    /*
+    if(variable_details.display_name=="Heart Rate") {
+        currChart.update({
+            chart: {
+                events: {
+                    load: function requestData() {
+                        $.ajax({
+                            url: 'BlockIoT_UI\\resources\\research_study\\cases_all\\249\\iot_hr.json',
+                            dataType: 'json',
+                            success: function(data) {
+                                var x = data[0];
+                                var y = data[1];
+                                point = [x, y];
+                                chart.series[0].addPoint(point);
+                                console.log("gothere");
+                                // call it again after five seconds
+                                setTimeout(requestData, 5000);    
+                            },
+                            cache: false
+                        });
+                    }
+                }
+            }
+        })
+    };*/
     const element = document.getElementById(chart_container_id);
     element.addEventListener("click", myFunction);
     const popup = document.getElementById("popup")
@@ -814,49 +821,49 @@ function create_selection_screen(){
     });
     $('.shower').show();
 }
-/*
-var arrayWithElements = new Array(),replaytimer;
 
-document.onclick = clickListener;
+document.onclick = mousePos;
+var clickArray = new Array(),replaytimer;
+
+function mousePos(e) {
+    let mousex = e.clientX; // Gets Mouse X
+    let mousey = e.clientY; // Gets Mouse Y
+    var newDiv = document.createElement("div");
+    newDiv.style.cssText = 'position:absolute;width:15px;height:15px;border-radius:50%;background-color:rgb(255, 0, 0);display:none';
+    newDiv.style.left = mousex + 'px';
+    newDiv.style.top = mousey + 'px';
+    document.body.appendChild(newDiv);
+    clickArray.push(newDiv);
+}
+
+
+
+//var arrayWithElements = new Array(),replaytimer;
+
+//document.onclick = clickListener;
 function replay(i)
 {
   clearTimeout(replaytimer);        
-  if(!arrayWithElements.length)return;
+  if(!clickArray.length)return;
   if(i>0)
   {
-    document.getElementsByTagName(arrayWithElements[i-1].tag)[arrayWithElements[i-1].index].style.border="none";
-    document.getElementsByTagName(arrayWithElements[i-1].tag)[arrayWithElements[i-1].index].style.backgroundColor="rgb(255, 255, 255)";
+    clickArray[i-1].style.display="none";
+    //document.getElementsByTagName(arrayWithElements[i-1].tag)[arrayWithElements[i-1].index].style.border="none";
+    //document.getElementsByTagName(arrayWithElements[i-1].tag)[arrayWithElements[i-1].index].style.backgroundColor="rgb(255, 255, 255)";
   }
-  document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.border="3px solid rgba(0, 255, 208, 0.4)";
-  document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.backgroundColor="rgba(0, 255, 208, 0.4)";
-  if(arrayWithElements.length>i+1)
+  clickArray[i].style.display="block";
+  //document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.border="3px solid rgba(0, 255, 208, 0.4)";
+  //document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.backgroundColor="rgba(0, 255, 208, 0.4)";
+  if(clickArray.length>i+1)
   {
-    replaytimer=setTimeout(function(){replay(i+1);},1000)
+    replaytimer=setTimeout(function(){replay(i+1);},1000);
   }
-  else(arrayWithElements.length>i+1)
+  else(clickArray.length>i+1)
   {
-    replaytimer=setTimeout(function(){document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.border="none";document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.backgroundColor="rgb(255, 255, 255)";},1000)
+      replaytimer=setTimeout(function(){clickArray[i].style.display="none";},1000);
+    //replaytimer=setTimeout(function(){document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.border="none";document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.backgroundColor="rgb(255, 255, 255)";},1000)
   }
 }
-
-function clickListener(e) 
-{   
-    var clickedElement=(window.event)
-                        ? window.event.srcElement
-                        : e.target,
-        tags=document.getElementsByTagName(clickedElement.tagName);
-                         
-    for(var i=0;i<tags.length;++i)
-    {
-      if(tags[i]==clickedElement)
-      {
-        arrayWithElements.push({tag:clickedElement.tagName,index:i}); 
-        //console.log(arrayWithElements);
-      }    
-    }
-}
-*/
-
 
 // fin //
 
