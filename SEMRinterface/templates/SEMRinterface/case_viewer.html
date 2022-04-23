@@ -19,6 +19,7 @@
     <script src="/static/jcode//highstock.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script src="/static/js/emr_3.js"></script>
+	<script src="/BlockIoT_UI/resources/research_study/cases_all/249/iot_hr.json"></script>
 </head>
 <body>
 <!--<div class="glyphicon glyphicon-refresh" id="loading_new_patient"></div>--><!-- this glyphicon blurrs the screen on loading -->
@@ -222,12 +223,14 @@
 				{% else %}
 				<li class="nav-track disabled" id="{{group}}tab">
 				{% endif %}
+					<!--creates note tab-find a way to check if group is empty and don't render if so-->
 					<a href="#{{group}}" data-toggle="tab"  onclick="remove_vertical_point(true);" class="even-less-pad">{{ group|truncatechars:7 }} <span class="badge">{% note_count dict_notes group %}</span></a>
 				</li>
                 
 			{% endfor %}
             </ul>
 
+			<!--Get rid of note panel text box and redo!!!-->
             <div class="contentArea tab-content">
 
 			{% for group in dict_notes %} 

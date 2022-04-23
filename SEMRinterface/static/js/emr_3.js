@@ -467,22 +467,24 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
             padding: 4,
             crosshairs: [false, false]
         }
-    });
+    })
     /*
     if(variable_details.display_name=="Heart Rate") {
+        console.log("gothere1");
         currChart.update({
             chart: {
                 events: {
-                    load: function requestData() {
+                    load: functin requestData() {
+                        console.log("gothere2");
                         $.ajax({
-                            url: 'BlockIoT_UI\\resources\\research_study\\cases_all\\249\\iot_hr.json',
+                            url: '/BlockIoT_UI/resources/research_study/cases_all/249/iot_hr.json',
                             dataType: 'json',
                             success: function(data) {
+                                console.log("gothere3");
                                 var x = data[0];
                                 var y = data[1];
                                 point = [x, y];
                                 chart.series[0].addPoint(point);
-                                console.log("gothere");
                                 // call it again after five seconds
                                 setTimeout(requestData, 5000);    
                             },
@@ -491,7 +493,7 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
                     }
                 }
             }
-        })
+        });
     };*/
     const element = document.getElementById(chart_container_id);
     element.addEventListener("click", myFunction);
