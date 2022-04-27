@@ -411,7 +411,7 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
                                 //var x = data[0];
                                 //var y = data[1];
                                 //point = [x, y];
-                                //console.log(point);
+                                console.log(point);
                                 series.addPoint(point);
                                 // call it again after five seconds
                             },
@@ -450,12 +450,12 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
                             return Highcharts.dateFormat('%b %e %H:%M:%S', this.value);
                         }
                     },
-                    min: selectedMin,
-                    max: selectedMax,
+                    min: 1651088490,
+                    max: 1651088550,
                     lineWidth: 0,
                     plotBands: [{
-                        from: displayed_max_t-86400000,
-                        to: displayed_max_t,
+                        from: 1651088490,
+                        to: 1651088550,
                         color: '#fce1c9',
                         id: 'plot-line-1'
                     }]
