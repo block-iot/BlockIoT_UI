@@ -346,6 +346,7 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
 	// determine if lab is numberic or descrete //
 	if (observation_details.numeric_lab_data.length > 0) {
 		var chart_data = observation_details.numeric_lab_data;
+        console.log(chart_data[0]['data']);
 		var show_y_axis_labels = true;
 		var left_spacing = 10;
 		var title_x_spacing = 0;
@@ -375,119 +376,213 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
 			break;
 		}
 	}
-
-	// create and render chart //
-    var currChart = new Highcharts.Chart({
-        chart: {
-            renderTo: chart_container_id,
-            height: 80,
-            spacingLeft: left_spacing,
-            spacingBottom: 6,
-            spacingTop: 6,
-            spacingRight: 6,
-            type: 'scatter',
-            zoomType: 'x',
-            events: {
-                click: function () {
-                    this.tooltip.hide();
-                },/*
-                load: function requestData() {
-                    console.log(document.location.hostname);
-                    /*$.getJSON("resources/research_study/cases_all/249/iot_hr.json", requestData());
-                }*/
-                
-                load: function requestData() {
-                    console.log("gothere2");
-                    $.ajax({
-                        url: '../SEMRinterface/static/js/iot_hr.json',
-                        dataType: 'json',
-                        success: function(data) {
-                            console.log("gothere3");
-                           /* var x = data[0];
-                            var y = data[1];
-                            point = [x, y];
-                            chart.series[0].addPoint(point);
-                            // call it again after five seconds
-                            setTimeout(requestData, 5000); */
-                        },
-                        cache: false
-                    });
+    var name = variable_details.display_name
+    if(name=="Heart Rate"||name=='Systolic BP' || name=="Diastolic BP"|| name=="Blood Glucose") {
+        var currChart = new Highcharts.Chart({
+            series: chart_data,
+            chart: {
+                renderTo: chart_container_id,
+                height: 80,
+                spacingLeft: left_spacing,
+                spacingBottom: 6,
+                spacingTop: 6,
+                spacingRight: 6,
+                type: 'scatter',
+                zoomType: 'x',
+                events: {
+                    click: function () {
+                        this.tooltip.hide();
+                    },/*
+                    load: function requestData() {
+                        console.log(document.location.hostname);
+                        /*$.getJSON("resources/research_study/cases_all/249/iot_hr.json", requestData());
+                    }*/
+                    
+                    load: function requestData() {
+                        var temp_url = "/static/js/iot_hr.json"
+                        var series = this.series[0];
+                        setInterval(function(){
+                        $.ajax({
+                            url: temp_url,
+                            dataType: 'json',
+                            success: function(data) {
+                                var x = data[0];
+                                var y = data[1];
+                                point = [x, y];
+                                console.log(point);
+                                series.addPoint(point);
+                                // call it again after five seconds
+                            },
+                            cache: false
+                        });
+                    },5000)}
                 }
-            }
-        },
-        credits: {
-            text: '<p style="font-size:13px">' + most_recent_val + '</p><br><p style="font-size:8px">' + observation_details.units + '</p>',
-            href: "",
-            zIndex: 0,
-            position: {align: "right", verticalAlign: "bottom", x: -8, y: -66},
-            style: {"fontSize": "14px", "color": "black", "cursor": "default"}
-        },
-        title: {text: variable_details.display_name, margin: 5, style: {"fontSize": "12px"}, align: "left", x: title_x_spacing},
-        legend: {enabled: false},
-        yAxis: {
-            labels: {enabled: show_y_axis_labels},
-            title: {text: null},
-            gridLineColor: 'grey',
-            plotBands: [{
-                from: variable_details.dflt_normal_ranges[0],
-                to: variable_details.dflt_normal_ranges[1],
-                color: 'rgba(68, 170, 213, 0.4)'
-            }]//,
-            //min: variable_details.dflt_y_axis_ranges[0],
-            //max: variable_details.dflt_y_axis_ranges[1]
-        },
-        xAxis: [
-            {
-                tickLength: 0,
-                labels: {
-                    enabled: false,
-                    formatter: function () {
-                        return Highcharts.dateFormat('%b %e %H:%M:%S', this.value);
+            },
+            credits: {
+                text: '<p style="font-size:13px">' + most_recent_val + '</p><br><p style="font-size:8px">' + observation_details.units + '</p>',
+                href: "",
+                zIndex: 0,
+                position: {align: "right", verticalAlign: "bottom", x: -8, y: -66},
+                style: {"fontSize": "14px", "color": "black", "cursor": "default"}
+            },
+            title: {text: variable_details.display_name, margin: 5, style: {"fontSize": "12px"}, align: "left", x: title_x_spacing},
+            legend: {enabled: false},
+            yAxis: {
+                labels: {enabled: show_y_axis_labels},
+                title: {text: null},
+                gridLineColor: 'grey',
+                plotBands: [{
+                    from: variable_details.dflt_normal_ranges[0],
+                    to: variable_details.dflt_normal_ranges[1],
+                    color: 'rgba(68, 170, 213, 0.4)'
+                }]//,
+                //min: variable_details.dflt_y_axis_ranges[0],
+                //max: variable_details.dflt_y_axis_ranges[1]
+            },
+            xAxis: [
+                {
+                    tickLength: 0,
+                    labels: {
+                        enabled: false,
+                        formatter: function () {
+                            return Highcharts.dateFormat('%b %e %H:%M:%S', this.value);
+                        }
+                    },
+                    min: selectedMin,
+                    max: selectedMax,
+                    lineWidth: 0,
+                    plotBands: [{
+                        from: displayed_max_t-86400000,
+                        to: displayed_max_t,
+                        color: '#fce1c9',
+                        id: 'plot-line-1'
+                    }]
+                }
+            ],
+            plotOptions: {
+                states: {
+                    hover: {
+                      brightness: 0,
+                      halo: {
+                        opacity: 1
+                      }
                     }
                 },
-                min: selectedMin,
-                max: selectedMax,
-                lineWidth: 0,
-                plotBands: [{
-                    from: displayed_max_t-86400000,
-                    to: displayed_max_t,
-                    color: '#fce1c9',
-                    id: 'plot-line-1'
-                }]
+                series: { point: { events: { click: function () { add_vertical_point(this.x); }}}}
+            }, tooltip: {
+                shared: false,
+                positioner: function (labelWidth, labelHeight, point) {
+                    return {x: currChart.chartWidth / 2 - (labelWidth + 2), y: 0};
+    
+                },
+                formatter: function () {
+                    if(this.series.name === 'numeric_values') {
+                        return '<p style="font-size:12px">' + this.y + '</p>'
+                    }else if(this.series.name === 'dias' || this.series.name === 'syst'){
+                        index = this.point.series.xData.indexOf(this.point.x);
+                        return chart_data[1].data[index][1] + '/' + chart_data[0].data[index][1];
+                    }else{
+                        return '<p style="font-size:12px">' + observation_details.discrete_nominal_to_yIndex[this.y] + '</p>'
+                    }
+                },
+                backgroundColor: "rgba(256,256,256,1)",
+                padding: 4,
+                crosshairs: [false, false]
             }
-        ],
-        series: chart_data,
-        plotOptions: {
-            states: {
-                hover: {
-                  brightness: 0,
-                  halo: {
-                    opacity: 1
-                  }
+        })
+    }
+    else {
+        // create and render chart //
+        var currChart = new Highcharts.Chart({
+            series: chart_data,
+            chart: {
+                renderTo: chart_container_id,
+                height: 80,
+                spacingLeft: left_spacing,
+                spacingBottom: 6,
+                spacingTop: 6,
+                spacingRight: 6,
+                type: 'scatter',
+                zoomType: 'x',
+                events: {
+                    click: function () {
+                        this.tooltip.hide();
+                    }
                 }
             },
-            series: { point: { events: { click: function () { add_vertical_point(this.x); }}}}
-        }, tooltip: {
-            shared: false,
-            positioner: function (labelWidth, labelHeight, point) {
-                return {x: currChart.chartWidth / 2 - (labelWidth + 2), y: 0};
+            credits: {
+                text: '<p style="font-size:13px">' + most_recent_val + '</p><br><p style="font-size:8px">' + observation_details.units + '</p>',
+                href: "",
+                zIndex: 0,
+                position: {align: "right", verticalAlign: "bottom", x: -8, y: -66},
+                style: {"fontSize": "14px", "color": "black", "cursor": "default"}
+            },
+            title: {text: variable_details.display_name, margin: 5, style: {"fontSize": "12px"}, align: "left", x: title_x_spacing},
+            legend: {enabled: false},
+            yAxis: {
+                labels: {enabled: show_y_axis_labels},
+                title: {text: null},
+                gridLineColor: 'grey',
+                plotBands: [{
+                    from: variable_details.dflt_normal_ranges[0],
+                    to: variable_details.dflt_normal_ranges[1],
+                    color: 'rgba(68, 170, 213, 0.4)'
+                }]//,
+                //min: variable_details.dflt_y_axis_ranges[0],
+                //max: variable_details.dflt_y_axis_ranges[1]
+            },
+            xAxis: [
+                {
+                    tickLength: 0,
+                    labels: {
+                        enabled: false,
+                        formatter: function () {
+                            return Highcharts.dateFormat('%b %e %H:%M:%S', this.value);
+                        }
+                    },
+                    min: selectedMin,
+                    max: selectedMax,
+                    lineWidth: 0,
+                    plotBands: [{
+                        from: displayed_max_t-86400000,
+                        to: displayed_max_t,
+                        color: '#fce1c9',
+                        id: 'plot-line-1'
+                    }]
+                }
+            ],
+            plotOptions: {
+                states: {
+                    hover: {
+                    brightness: 0,
+                    halo: {
+                        opacity: 1
+                    }
+                    }
+                },
+                series: { point: { events: { click: function () { add_vertical_point(this.x); }}}}
+            }, tooltip: {
+                shared: false,
+                positioner: function (labelWidth, labelHeight, point) {
+                    return {x: currChart.chartWidth / 2 - (labelWidth + 2), y: 0};
 
-            },
-            formatter: function () {
-                if(this.series.name === 'numeric_values') {
-                    return '<p style="font-size:12px">' + this.y + '</p>'
-                }else if(this.series.name === 'dias' || this.series.name === 'syst'){
-					index = this.point.series.xData.indexOf(this.point.x);
-                    return chart_data[1].data[index][1] + '/' + chart_data[0].data[index][1];
-				}else{
-                    return '<p style="font-size:12px">' + observation_details.discrete_nominal_to_yIndex[this.y] + '</p>'
-                }
-            },
-            backgroundColor: "rgba(256,256,256,1)",
-            padding: 4,
-            crosshairs: [false, false]
-        }
-    })
+                },
+                formatter: function () {
+                    if(this.series.name === 'numeric_values') {
+                        return '<p style="font-size:12px">' + this.y + '</p>'
+                    }else if(this.series.name === 'dias' || this.series.name === 'syst'){
+                        index = this.point.series.xData.indexOf(this.point.x);
+                        return chart_data[1].data[index][1] + '/' + chart_data[0].data[index][1];
+                    }else{
+                        return '<p style="font-size:12px">' + observation_details.discrete_nominal_to_yIndex[this.y] + '</p>'
+                    }
+                },
+                backgroundColor: "rgba(256,256,256,1)",
+                padding: 4,
+                crosshairs: [false, false]
+            }
+        })
+    }
     /*
     if(variable_details.display_name=="Heart Rate") {
         console.log("gothere1");
