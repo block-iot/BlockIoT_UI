@@ -14,10 +14,13 @@ body {
 }
 
 .notebox{
-    height: 70.3vh;
+    height: 104.3vh;
     overflow-y: hidden;
     overflow-x: hidden;
     /*padding-top: 35px;*/
+}
+#note_scroll{
+    height: 104.3vh;
 }
 
 .taskbox{

@@ -1,0 +1,2678 @@
+{
+  "50999": {
+    "display_text": "Tricyclic Antidepressant Screen",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51002": {
+    "display_text": "Troponin I",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0
+          ],
+          [
+            6686425800.0,
+            0
+          ],
+          [
+            6686447700.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "ng/ml",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51006": {
+    "display_text": "Urea Nitrogen",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            24.0
+          ],
+          [
+            6686402400.0,
+            26.0
+          ],
+          [
+            6686447700.0,
+            25.0
+          ],
+          [
+            6686532000.0,
+            17.0
+          ],
+          [
+            6686620980.0,
+            15.0
+          ],
+          [
+            6686714700.0,
+            21.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      15.0,
+      26.0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51146": {
+    "display_text": "Basophils",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0.3
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0.3,
+      0.3
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51200": {
+    "display_text": "Eosinophils",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            1.7
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      1.7,
+      1.7
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51221": {
+    "display_text": "Hematocrit",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            42.3
+          ],
+          [
+            6686447700.0,
+            33.7
+          ],
+          [
+            6686485200.0,
+            33.8
+          ],
+          [
+            6686532000.0,
+            34.7
+          ],
+          [
+            6686620980.0,
+            36.5
+          ],
+          [
+            6686714700.0,
+            36.1
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      33.7,
+      42.3
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51222": {
+    "display_text": "Hemoglobin",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            14.9
+          ],
+          [
+            6686447700.0,
+            11.7
+          ],
+          [
+            6686532000.0,
+            12.0
+          ],
+          [
+            6686620980.0,
+            12.6
+          ],
+          [
+            6686714700.0,
+            11.9
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      11.7,
+      14.9
+    ],
+    "units": "g/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51237": {
+    "display_text": "INR(PT)",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            1.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      1.0,
+      1.0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51244": {
+    "display_text": "Lymphocytes",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            16.6
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      16.6,
+      16.6
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51248": {
+    "display_text": "MCH",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            28.8
+          ],
+          [
+            6686447700.0,
+            28.7
+          ],
+          [
+            6686532000.0,
+            29.0
+          ],
+          [
+            6686620980.0,
+            28.5
+          ],
+          [
+            6686714700.0,
+            28.4
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      28.4,
+      29.0
+    ],
+    "units": "pg",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51249": {
+    "display_text": "MCHC",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            35.2
+          ],
+          [
+            6686447700.0,
+            34.5
+          ],
+          [
+            6686532000.0,
+            34.7
+          ],
+          [
+            6686620980.0,
+            34.4
+          ],
+          [
+            6686714700.0,
+            32.9
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      32.9,
+      35.2
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51250": {
+    "display_text": "MCV",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            82.0
+          ],
+          [
+            6686447700.0,
+            83.0
+          ],
+          [
+            6686532000.0,
+            84.0
+          ],
+          [
+            6686620980.0,
+            83.0
+          ],
+          [
+            6686714700.0,
+            86.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      82.0,
+      86.0
+    ],
+    "units": "fL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51254": {
+    "display_text": "Monocytes",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            7.4
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      7.4,
+      7.4
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51256": {
+    "display_text": "Neutrophils",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            73.9
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      73.9,
+      73.9
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51265": {
+    "display_text": "Platelet Count",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            232.0
+          ],
+          [
+            6686447700.0,
+            202.0
+          ],
+          [
+            6686532000.0,
+            184.0
+          ],
+          [
+            6686620980.0,
+            200.0
+          ],
+          [
+            6686714700.0,
+            213.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      184.0,
+      232.0
+    ],
+    "units": "K/uL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51274": {
+    "display_text": "PT",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            11.7
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      11.7,
+      11.7
+    ],
+    "units": "SECONDS",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51275": {
+    "display_text": "PTT",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            23.7
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      23.7,
+      23.7
+    ],
+    "units": "sec",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51277": {
+    "display_text": "RDW",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            13.0
+          ],
+          [
+            6686447700.0,
+            13.1
+          ],
+          [
+            6686532000.0,
+            12.9
+          ],
+          [
+            6686620980.0,
+            12.8
+          ],
+          [
+            6686714700.0,
+            13.8
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      12.8,
+      13.8
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51279": {
+    "display_text": "Red Blood Cells",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            5.19
+          ],
+          [
+            6686447700.0,
+            4.07
+          ],
+          [
+            6686532000.0,
+            4.15
+          ],
+          [
+            6686620980.0,
+            4.4
+          ],
+          [
+            6686714700.0,
+            4.18
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      4.07,
+      5.19
+    ],
+    "units": "m/uL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51301": {
+    "display_text": "White Blood Cells",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            9.6
+          ],
+          [
+            6686447700.0,
+            11.1
+          ],
+          [
+            6686532000.0,
+            10.2
+          ],
+          [
+            6686620980.0,
+            8.7
+          ],
+          [
+            6686714700.0,
+            6.2
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      6.2,
+      11.1
+    ],
+    "units": "K/uL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51071": {
+    "display_text": "Amphetamine Screen, Urine",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51074": {
+    "display_text": "Barbiturate Screen, Urine",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51075": {
+    "display_text": "Benzodiazepine Screen, Urine",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51079": {
+    "display_text": "Cocaine, Urine",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51087": {
+    "display_text": "Length of Urine Collection",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51090": {
+    "display_text": "Methadone, Urine",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51092": {
+    "display_text": "Opiate Screen, Urine",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51463": {
+    "display_text": "Bacteria",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51464": {
+    "display_text": "Bilirubin",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "EU/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51466": {
+    "display_text": "Blood",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51476": {
+    "display_text": "Epithelial Cells",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "#/hpf",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51478": {
+    "display_text": "Glucose",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            250.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      250.0,
+      250.0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51484": {
+    "display_text": "Ketone",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51486": {
+    "display_text": "Leukocytes",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51487": {
+    "display_text": "Nitrite",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51491": {
+    "display_text": "pH",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            7.5
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      7.5,
+      7.5
+    ],
+    "units": "units",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51492": {
+    "display_text": "Protein",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            100.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      100.0,
+      100.0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51493": {
+    "display_text": "RBC",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "#/hpf",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51498": {
+    "display_text": "Specific Gravity",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            1.02
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      1.02,
+      1.02
+    ],
+    "units": " ",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51506": {
+    "display_text": "Urine Appearance",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51508": {
+    "display_text": "Urine Color",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51513": {
+    "display_text": "Urine Specimen Type",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51514": {
+    "display_text": "Urobilinogen",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0.2
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0.2,
+      0.2
+    ],
+    "units": "EU/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51516": {
+    "display_text": "WBC",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "#/hpf",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51519": {
+    "display_text": "Yeast",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "51523": {
+    "display_text": "GR HOLD",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686391300.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50868": {
+    "display_text": "Anion Gap",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686402400.0,
+            13.0
+          ],
+          [
+            6686447700.0,
+            14.0
+          ],
+          [
+            6686388900.0,
+            17.0
+          ],
+          [
+            6686532000.0,
+            12.0
+          ],
+          [
+            6686620980.0,
+            13.0
+          ],
+          [
+            6686714700.0,
+            17.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      12.0,
+      17.0
+    ],
+    "units": "mEq/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50882": {
+    "display_text": "Bicarbonate",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686402400.0,
+            25.0
+          ],
+          [
+            6686447700.0,
+            25.0
+          ],
+          [
+            6686388900.0,
+            25.0
+          ],
+          [
+            6686532000.0,
+            25.0
+          ],
+          [
+            6686620980.0,
+            25.0
+          ],
+          [
+            6686714700.0,
+            23.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      23.0,
+      25.0
+    ],
+    "units": "mEq/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50902": {
+    "display_text": "Chloride",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686402400.0,
+            108.0
+          ],
+          [
+            6686447700.0,
+            111.0
+          ],
+          [
+            6686388900.0,
+            104.0
+          ],
+          [
+            6686532000.0,
+            106.0
+          ],
+          [
+            6686620980.0,
+            103.0
+          ],
+          [
+            6686714700.0,
+            103.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      103.0,
+      111.0
+    ],
+    "units": "mEq/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50912": {
+    "display_text": "Creatinine",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686402400.0,
+            1.7
+          ],
+          [
+            6686447700.0,
+            1.7
+          ],
+          [
+            6686388900.0,
+            1.7
+          ],
+          [
+            6686532000.0,
+            1.7
+          ],
+          [
+            6686620980.0,
+            1.6
+          ],
+          [
+            6686714700.0,
+            1.8
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      1.6,
+      1.8
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50931": {
+    "display_text": "Glucose",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686402400.0,
+            243.0
+          ],
+          [
+            6686447700.0,
+            62.0
+          ],
+          [
+            6686388900.0,
+            123.0
+          ],
+          [
+            6686532000.0,
+            165.0
+          ],
+          [
+            6686620980.0,
+            114.0
+          ],
+          [
+            6686714700.0,
+            113.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      62.0,
+      243.0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50971": {
+    "display_text": "Potassium",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686402400.0,
+            3.9
+          ],
+          [
+            6686425800.0,
+            4.0
+          ],
+          [
+            6686447700.0,
+            3.7
+          ],
+          [
+            6686388900.0,
+            6.2
+          ],
+          [
+            6686532000.0,
+            4.2
+          ],
+          [
+            6686620980.0,
+            3.8
+          ],
+          [
+            6686714700.0,
+            4.2
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      3.7,
+      6.2
+    ],
+    "units": "mEq/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50983": {
+    "display_text": "Sodium",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686402400.0,
+            142.0
+          ],
+          [
+            6686447700.0,
+            146.0
+          ],
+          [
+            6686388900.0,
+            140.0
+          ],
+          [
+            6686532000.0,
+            139.0
+          ],
+          [
+            6686620980.0,
+            137.0
+          ],
+          [
+            6686714700.0,
+            139.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      137.0,
+      146.0
+    ],
+    "units": "mEq/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50911": {
+    "display_text": "Creatine Kinase, MB Isoenzyme",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686425800.0,
+            2.0
+          ],
+          [
+            6686447700.0,
+            2.0
+          ],
+          [
+            6686388900.0,
+            3.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      2.0,
+      3.0
+    ],
+    "units": "ng/mL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50852": {
+    "display_text": "% Hemoglobin A1c",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686447700.0,
+            6.6
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      6.6,
+      6.6
+    ],
+    "units": "%",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50910": {
+    "display_text": "Creatine Kinase (CK)",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686447700.0,
+            213.0
+          ],
+          [
+            6686388900.0,
+            344.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      213.0,
+      344.0
+    ],
+    "units": "IU/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50956": {
+    "display_text": "Lipase",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686447700.0,
+            47.0
+          ],
+          [
+            6686388900.0,
+            96.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      47.0,
+      96.0
+    ],
+    "units": "IU/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50960": {
+    "display_text": "Magnesium",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686447700.0,
+            1.6
+          ],
+          [
+            6686532000.0,
+            1.7
+          ],
+          [
+            6686620980.0,
+            1.9
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      1.6,
+      1.9
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50970": {
+    "display_text": "Phosphate",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686447700.0,
+            4.6
+          ],
+          [
+            6686532000.0,
+            3.9
+          ],
+          [
+            6686620980.0,
+            4.6
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      3.9,
+      4.6
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50856": {
+    "display_text": "Acetaminophen",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "ug/mL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50861": {
+    "display_text": "Alanine Aminotransferase (ALT)",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            26.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      26.0,
+      26.0
+    ],
+    "units": "IU/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50862": {
+    "display_text": "Albumin",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            4.5
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      4.5,
+      4.5
+    ],
+    "units": "g/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50863": {
+    "display_text": "Alkaline Phosphatase",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            95.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      95.0,
+      95.0
+    ],
+    "units": "IU/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50867": {
+    "display_text": "Amylase",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            69.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      69.0,
+      69.0
+    ],
+    "units": "IU/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50878": {
+    "display_text": "Asparate Aminotransferase (AST)",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            34.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      34.0,
+      34.0
+    ],
+    "units": "IU/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50879": {
+    "display_text": "Barbiturate Screen",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50880": {
+    "display_text": "Benzodiazepine Screen",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50885": {
+    "display_text": "Bilirubin, Total",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0.5
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0.5,
+      0.5
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50922": {
+    "display_text": "Ethanol",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50933": {
+    "display_text": "Green Top Hold (plasma)",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50981": {
+    "display_text": "Salicylate",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686388900.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50800": {
+    "display_text": "SPECIMEN TYPE",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686449080.0,
+            0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      0,
+      0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50802": {
+    "display_text": "Base Excess",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686449080.0,
+            1.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      1.0,
+      1.0
+    ],
+    "units": "mEq/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50804": {
+    "display_text": "Calculated Total CO2",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686449080.0,
+            27.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      27.0,
+      27.0
+    ],
+    "units": "mEq/L",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50809": {
+    "display_text": "Glucose",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686449080.0,
+            75.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      75.0,
+      75.0
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50817": {
+    "display_text": "Oxygen Saturation",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686449080.0,
+            98.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      98.0,
+      98.0
+    ],
+    "units": "",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50818": {
+    "display_text": "pCO2",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686449080.0,
+            41.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      41.0,
+      41.0
+    ],
+    "units": "mm Hg",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50820": {
+    "display_text": "pH",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686449080.0,
+            7.41
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      7.41,
+      7.41
+    ],
+    "units": "units",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50821": {
+    "display_text": "pO2",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686449080.0,
+            121.0
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      121.0,
+      121.0
+    ],
+    "units": "mm Hg",
+    "discrete_nominal_to_yIndex": []
+  },
+  "50893": {
+    "display_text": "Calcium, Total",
+    "numeric_lab_data": [
+      {
+        "zones": [
+          {
+            "color": "#000000"
+          }
+        ],
+        "marker": {
+          "symbol": "circle"
+        },
+        "data": [
+          [
+            6686532000.0,
+            8.8
+          ],
+          [
+            6686620980.0,
+            9.2
+          ]
+        ],
+        "name": "numeric_values"
+      }
+    ],
+    "discrete_lab_data": [],
+    "y_axis_ranges": [
+      8.8,
+      9.2
+    ],
+    "units": "mg/dL",
+    "discrete_nominal_to_yIndex": []
+  }
+}

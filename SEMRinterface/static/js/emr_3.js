@@ -390,9 +390,29 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
             events: {
                 click: function () {
                     this.tooltip.hide();
+                },/*
+                load: function requestData() {
+                    console.log(document.location.hostname);
+                    /*$.getJSON("resources/research_study/cases_all/249/iot_hr.json", requestData());
+                }*/
+                
+                load: function requestData() {
+                    console.log("gothere2");
+                    $.ajax({
+                        url: '../SEMRinterface/static/js/iot_hr.json',
+                        dataType: 'json',
+                        success: function(data) {
+                            console.log("gothere3");
+                           /* var x = data[0];
+                            var y = data[1];
+                            point = [x, y];
+                            chart.series[0].addPoint(point);
+                            // call it again after five seconds
+                            setTimeout(requestData, 5000); */
+                        },
+                        cache: false
+                    });
                 }
-
-
             }
         },
         credits: {
@@ -474,7 +494,7 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
         currChart.update({
             chart: {
                 events: {
-                    load: functin requestData() {
+                    load: function requestData() {
                         console.log("gothere2");
                         $.ajax({
                             url: '/BlockIoT_UI/resources/research_study/cases_all/249/iot_hr.json',
@@ -496,12 +516,12 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
         });
     };*/
     const element = document.getElementById(chart_container_id);
-    element.addEventListener("click", myFunction);
+    element.addEventListener("click", enlargeChart);
     const popup = document.getElementById("popup")
     popup.addEventListener("click", function() {
         popup.style.display = "none";
     });
-    function myFunction() {
+    function enlargeChart() {
         popup.style.display = popup.style.display == "none" ? "block" : "none";
         var dispChart = new Highcharts.Chart('chart_container', currChart.options);
         dispChart.update({

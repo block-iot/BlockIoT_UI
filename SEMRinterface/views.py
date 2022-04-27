@@ -208,7 +208,21 @@ def case_viewer(request, study_id, user_id, case_id, time_step=0):
     dict_medications = json.load(open(os.path.join(load_dir, 'medications.json'), 'r'))
     dict_notes = json.load(open(os.path.join(load_dir, 'note_panel_data.json'), 'r'))
     dict_observations = json.load(open(os.path.join(load_dir, 'observations.json'), 'r'))
+    #dict_iot_devices = json.load(open(os.path.join(load_dir, 'output.json'), 'r'))
 
+    valid_routes = []
+    for key in dict_medications:
+        route = dict_med_2_details[key]['med_route']
+        if route not in valid_routes:
+            valid_routes.append(route)
+    dict_data_layout['med_panel_groups'] = valid_routes
+    #delete_meds = [group for group in dict_data_layout['med_panel_groups'] if group not in dict_medications.keys()]
+    #for group in delete_meds:
+    #    dict_data_layout['med_panel_groups'].remove(group)
+
+    delete_notes = [group for group in dict_data_layout['note_panel_groups'] if group not in dict_notes.keys()]
+    for group in delete_notes:
+        dict_data_layout['note_panel_groups'].remove(group)
 
     ## define user instructions dict ##
     instructions = {}
@@ -235,6 +249,7 @@ def case_viewer(request, study_id, user_id, case_id, time_step=0):
         'test': 'test',
         'list_1_2': [1, 2],
         'list_3_4_5_6': [3, 4, 5, 6]
+        #'dict_iot_devices': dict_iot_devices
     }
     return HttpResponse(template.render(context_dict)) 
     
