@@ -405,11 +405,13 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
                         $.ajax({
                             url: temp_url,
                             dataType: 'json',
-                            success: function(data) {
-                                var x = data[0];
-                                var y = data[1];
-                                point = [x, y];
-                                console.log(point);
+                            success: function(data) { 
+                                point = data[name][data[name].length - 1];
+                                
+                                //var x = data[0];
+                                //var y = data[1];
+                                //point = [x, y];
+                                //console.log(point);
                                 series.addPoint(point);
                                 // call it again after five seconds
                             },
