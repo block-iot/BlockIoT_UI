@@ -8,7 +8,7 @@
     ],
     "dflt_y_axis_ranges": [
       0,
-      0
+      100
     ],
     "original_name": "Heart Rate",
     "units": ""
@@ -22,7 +22,7 @@
     ],
     "dflt_y_axis_ranges": [
       0,
-      0
+      200
     ],
     "original_name": "Blood Glucose",
     "units": ""
@@ -36,7 +36,7 @@
     ],
     "dflt_y_axis_ranges": [
       0,
-      0
+      200
     ],
     "original_name": "Systolic BP",
     "units": ""
@@ -50,7 +50,7 @@
     ],
     "dflt_y_axis_ranges": [
       0,
-      0
+      90
     ],
     "original_name": "Diastolic BP",
     "units": ""

@@ -32,7 +32,7 @@ from django.conf.urls import include, url
 app_name = "SEMRinterface"
 
 urlpatterns = [
-    url(r'^SEMRinterface/', include('SEMRinterface.urls'))
+    url(r'^SEMRinterface/', include('SEMRinterface.urls')),
     ]
 
 
