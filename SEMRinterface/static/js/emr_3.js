@@ -376,6 +376,8 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
 			break;
 		}
 	}
+
+
     var name = variable_details.display_name
     if(name=="Heart Rate"||name=='Systolic BP' || name=="Diastolic BP"|| name=="Blood Glucose") {
         var currChart = new Highcharts.Chart({
@@ -407,7 +409,7 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
                             dataType: 'json',
                             success: function(data) { 
                                 point = data[name][data[name].length - 1];
-                                
+                                point.color("#11ffff"); //Change color of point.
                                 //var x = data[0];
                                 //var y = data[1];
                                 //point = [x, y];
@@ -494,6 +496,25 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
         })
     }
     else {
+
+        // Loop through values to see if all values are zero. //
+        var allzeros = true;
+        for (var i = chart_data[0].data.length - 1; i >= 0; i--) {
+            var temp_val = chart_data[0].data[i][1];
+            if (chart_container_id == 'chartVTDIAV') {
+                temp_val = chart_data[1].data[i][1] + '/' + chart_data[0].data[i][1];	
+            }
+            if (isDiscrete){
+                temp_val = observation_details.discrete_nominal_to_yIndex[most_recent_val];
+            }
+
+            if(temp_val != 0) {
+                allzeros = false;
+                break;
+            }
+        }
+        if(allzeros == true) { return; }
+
         // create and render chart //
         var currChart = new Highcharts.Chart({
             series: chart_data,
