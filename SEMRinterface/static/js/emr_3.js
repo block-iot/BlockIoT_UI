@@ -324,6 +324,37 @@ function add_observation_chart(obs_id, observation_details, variable_details, pa
 		variable_details is from variable_details.json
 	*/
 	var chart_container_id = 'chart'+obs_id
+
+    // Loop through values to see if all values are zero. //
+    var allzeros = true;
+    if (observation_details.numeric_lab_data.length > 0) {
+		var chart_data = observation_details.numeric_lab_data;
+		var isDiscrete = false; 
+	} else if (observation_details.discrete_lab_data.length > 0) {
+		var chart_data = observation_details.discrete_lab_data;
+		var isDiscrete = true; 
+	} else {
+		console.log('no lab for' + variable_details.display_name);
+		return;
+	}
+    for (var i = chart_data[0].data.length - 1; i >= 0; i--) {
+        var temp_val = chart_data[0].data[i][1];
+        if (chart_container_id == 'chartVTDIAV') {
+            temp_val = chart_data[1].data[i][1] + '/' + chart_data[0].data[i][1];	
+        }
+        if (isDiscrete){
+            temp_val = observation_details.discrete_nominal_to_yIndex[temp_val];
+        }
+
+        if(temp_val != 0) {
+            allzeros = false;
+            break;
+        }
+    }
+    if(allzeros == true) {
+        return; 
+    }
+
 	if (panel_1_groups.includes(variable_details.display_group)) {
 		div_str = '<div class="vitalrow" id="row'+obs_id+'" onclick="activate(row'+obs_id+')">' 	
 	}else if (obs_id == 'IO'){
@@ -496,24 +527,6 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
         })
     }
     else {
-
-        // Loop through values to see if all values are zero. //
-        var allzeros = true;
-        for (var i = chart_data[0].data.length - 1; i >= 0; i--) {
-            var temp_val = chart_data[0].data[i][1];
-            if (chart_container_id == 'chartVTDIAV') {
-                temp_val = chart_data[1].data[i][1] + '/' + chart_data[0].data[i][1];	
-            }
-            if (isDiscrete){
-                temp_val = observation_details.discrete_nominal_to_yIndex[most_recent_val];
-            }
-
-            if(temp_val != 0) {
-                allzeros = false;
-                break;
-            }
-        }
-        if(allzeros == true) { return; }
 
         // create and render chart //
         var currChart = new Highcharts.Chart({
