@@ -665,7 +665,8 @@ function get_lab_chart(chart_container_id, observation_details, variable_details
                 spacingLeft: 50,
                 spacingBottom: 24,
                 spacingTop: 24,
-                spacingRight: 24
+                spacingRight: 24,
+                zooming: "xy"
             },
             title: {style: {"fontSize": "18px"}},
             yAxis: {
