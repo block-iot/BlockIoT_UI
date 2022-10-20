@@ -176,6 +176,7 @@ TEMPLATES = [
 ]
 
 INSTALLED_APPS = (
+    'markdownify.apps.MarkdownifyConfig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
