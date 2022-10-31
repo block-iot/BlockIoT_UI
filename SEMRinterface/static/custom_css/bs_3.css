@@ -83,14 +83,14 @@ body {
     /*width: 30%;
     margin: 10px;*/
     border-radius: 10px;
-    width: 22%;
-    margin: 6px;
+    width: 28%;
+    margin: 10px;
     margin-right: 12px;
     letter-spacing: -0.31em;
     float: left;
     background: #dfdfdf;
-    boarder-width: thin;
-    boarder-style: solid;
+    border-width: thin;
+    border-style: solid;
 
 }
 
@@ -102,8 +102,8 @@ body {
     letter-spacing: -0.31em;
     float: left;
     background: #dfdfdf;
-    boarder-width: thin;
-    boarder-style: solid;
+    border-width: thin;
+    border-style: solid;
 }
 
 .scroll-box{
@@ -272,7 +272,7 @@ a:active {
     margin-left: 12px;
     margin-right: 0px;
     /*height: 90%;*/
-    font-family: Verdana;
+    font-family: Helvetica;
     /*font-weight: bold;*/
     overflow-x: hidden;
     overflow-y: auto;
@@ -334,10 +334,6 @@ textarea {
     max-height:500px;
     overflow:auto;
     width: 85%;
-}
-
-.units{
-
 }
 
 .shower{
