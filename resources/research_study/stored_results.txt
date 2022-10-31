@@ -1,3 +1,8 @@
 {"user_id": "testUser1", "case_id": "10000102", "selected_ids": ["rowBASEDA","rowPO2V","rowHCO3V","rowmedidx47","rowIO"]}
 {"user_id": "testUser1", "case_id": "10000102", "selected_ids": ["rowBASEEA"]}
 {"user_id": "testUser1", "case_id": "10000101", "selected_ids": ["rowCREAT", "rowHCO3V"]}
+{"user_id": "testUser1", "case_id": "249", "selected_ids": ["row51237", "row51248"]}
+{"user_id": "testUser1", "case_id": "249", "selected_ids": ["row51237", "row51248"]}
+{"user_id": "testUser1", "case_id": "13033", "selected_ids": ["row51146"]}
+{"user_id": "testUser1", "case_id": "249", "selected_ids": ["row51237", "row51248", "row51249"]}
+{"user_id": "testUser1", "case_id": "249", "selected_ids": ["row51237", "row51248"]}
