@@ -36,7 +36,7 @@
                 {% autoescape off %}
                     <div class="tab-pane report {% if forloop.counter0 == 0 %} active {% endif %}"
                          id="{{ div_id }}-{{ forloop.counter0 }}-{{ report.upk }}"><p></p><p align="center">
-                        Date: {{ report.date }}</p><p></p> {% load markdownify %} {{ report.text|markdownify|safe|linebreaks }}
+                        Date: {{ report.date }}</p><p></p> {% load markdownify %} {{ report.text|markdownify|linebreaks|safe}}
                     </div>
                 {% endautoescape %}
             {% endfor %}

@@ -788,7 +788,7 @@ function get_med_chart(chart_container_id, medication_details, med_details) {
             crosshairs: [false, false]
         }
     });
-
+    
     const element = document.getElementById(chart_container_id);
     element.addEventListener("click", myFunction);
     const popup = document.getElementById("popup");
@@ -976,6 +976,7 @@ function create_selection_screen(){
     $('.shower').show();
 }
 
+/*
 document.onclick = mousePos;
 var clickArray = new Array(),replaytimer;
 
@@ -1018,6 +1019,6 @@ function replay(i)
     //replaytimer=setTimeout(function(){document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.border="none";document.getElementsByTagName(arrayWithElements[i].tag)[arrayWithElements[i].index].style.backgroundColor="rgb(255, 255, 255)";},1000)
   }
 }
-
+*/
 // fin //
 
