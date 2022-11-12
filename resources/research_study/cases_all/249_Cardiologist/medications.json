@@ -1,0 +1,156 @@
+{
+    "51079041720": {
+      "display_text": "Imdur",
+      "med_data": [
+        {
+          "color": "#000000",
+          "marker": {
+            "symbol": "circle"
+          },
+          "data": [
+            [
+              5679176400.0,
+              30
+            ]
+          ],
+          "name": "medication_data"
+        }
+      ],
+      "y_axis_ranges": [
+        0,
+        80
+      ]
+    },
+    "00074227811": {
+        "display_text": "Beta-Blocker",
+        "med_data": [
+          {
+            "color": "#000000",
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679176400.0,
+                2.5
+              ]
+            ],
+            "name": "medication_data"
+          }
+        ],
+        "y_axis_ranges": [
+          0,
+          5
+        ]
+    },
+    "00338055002": {
+        "display_text": "Nitroglycerin",
+        "med_data": [
+          {
+            "color": "#000000",
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679176400.0,
+                4.0
+              ]
+            ],
+            "name": "medication_data"
+          }
+        ],
+        "y_axis_ranges": [
+          0,
+          10
+        ]
+    },
+    "00002735501": {
+        "display_text": "Benazepril",
+        "med_data": [
+          {
+            "color": "#000000",
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679176400.0,
+                10
+              ]
+            ],
+            "name": "medication_data"
+          }
+        ],
+        "y_axis_ranges": [
+          0,
+          50
+        ]
+    },
+    "00003045051": {
+        "display_text": "Flusvastatin",
+        "med_data": [
+          {
+            "color": "#000000",
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679176400.0,
+                40
+              ]
+            ],
+            "name": "medication_data"
+          }
+        ],
+        "y_axis_ranges": [
+          0,
+          100
+        ]
+    },
+    "00168032608": {
+        "display_text": "Aspirin",
+        "med_data": [
+          {
+            "color": "#000000",
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679176400.0,
+                100
+              ]
+            ],
+            "name": "medication_data"
+          }
+        ],
+        "y_axis_ranges": [
+          0,
+          700
+        ]
+    },
+    "00054872625": {
+        "display_text": "Mavik",
+        "med_data": [
+          {
+            "color": "#000000",
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679176400.0,
+                2
+              ]
+            ],
+            "name": "medication_data"
+          }
+        ],
+        "y_axis_ranges": [
+          0,
+          10
+        ]
+    }
+}
