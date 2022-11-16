@@ -1,4 +1,49 @@
 {
+  "51079041722": {
+    "med_route": "PO",
+    "display_name": "Imdur",
+    "original_name": "Imdur"
+  },
+  "51079041723": {
+    "med_route": "PO",
+    "display_name": "Beta-Blocker",
+    "original_name": "Beta-Blocker"
+  },
+  "51079041724": {
+    "med_route": "PO",
+    "display_name": "Nitroglycerin",
+    "original_name": "Nitroglycerin"
+  },
+  "51079041725": {
+    "med_route": "PO",
+    "display_name": "Benazepril",
+    "original_name": "Benazepril"
+  },
+  "51079041726": {
+    "med_route": "PO",
+    "display_name": "Flusvastatin",
+    "original_name": "Flusvastatin"
+  },
+  "51079041727": {
+    "med_route": "PO",
+    "display_name": "Aspirin",
+    "original_name": "Aspirin"
+  },
+  "51079041728": {
+    "med_route": "PO",
+    "display_name": "Mavik",
+    "original_name": "Mavik"
+  },
+  "51079041729": {
+    "med_route": "PO",
+    "display_name": "Breo Ellipta",
+    "original_name": "Breo Ellipta"
+  },
+  "51079041730": {
+    "med_route": "PO",
+    "display_name": "Pantroprazole",
+    "original_name": "Pantroprazole"
+  },
   "00469061711": {
     "med_route": "PO",
     "display_name": "Tacrolimus",
