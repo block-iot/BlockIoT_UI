@@ -1,1 +1,147 @@
-{}
+{
+    "1649174100": {
+        "display_text": "Smart Pill Bottle (Protonix)",
+        "numeric_lab_data": [
+          {
+            "zones": [
+                {
+                  "color": "#000000"
+                }
+              ],
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679215940.0,
+                40.0
+              ]
+            ],
+            "name": "numeric_values"
+          }
+        ],
+        "discrete_lab_data": [],
+        "y_axis_ranges": [
+          10,
+          100
+        ],
+        "units": "mg",
+        "discrete_nominal_to_yIndex": []
+    },
+    "1649174101": {
+        "display_text": "Smart Watch Atrial Fibulation (AFib)",
+        "numeric_lab_data": [
+          {
+            "zones": [
+                {
+                  "color": "#000000"
+                }
+              ],
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679215940.0,
+                140.0
+              ]
+            ],
+            "name": "numeric_values"
+          }
+        ],
+        "discrete_lab_data": [],
+        "y_axis_ranges": [
+          50,
+          200
+        ],
+        "units": "",
+        "discrete_nominal_to_yIndex": []
+    },
+    "1649174102": {
+        "display_text": "Smart Asthma Inhaler (Flovent)",
+        "numeric_lab_data": [
+          {
+            "zones": [
+                {
+                  "color": "#000000"
+                }
+              ],
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679215940.0,
+                44.0
+              ]
+            ],
+            "name": "numeric_values"
+          }
+        ],
+        "discrete_lab_data": [],
+        "y_axis_ranges": [
+          10,
+          100
+        ],
+        "units": "mcg",
+        "discrete_nominal_to_yIndex": []
+    },
+    "1649174103": {
+        "display_text": "Smart Albuterol",
+        "numeric_lab_data": [
+          {
+            "zones": [
+                {
+                  "color": "#000000"
+                }
+              ],
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679215940.0,
+                10.0
+              ]
+            ],
+            "name": "numeric_values"
+          }
+        ],
+        "discrete_lab_data": [],
+        "y_axis_ranges": [
+          0,
+          15
+        ],
+        "units": "mg",
+        "discrete_nominal_to_yIndex": []
+    },
+    "1649174104": {
+        "display_text": "Smart Weight Scale",
+        "numeric_lab_data": [
+          {
+            "zones": [
+                {
+                  "color": "#000000"
+                }
+              ],
+            "marker": {
+              "symbol": "circle"
+            },
+            "data": [
+              [
+                5679215940.0,
+                164.0
+              ]
+            ],
+            "name": "numeric_values"
+          }
+        ],
+        "discrete_lab_data": [],
+        "y_axis_ranges": [
+          100,
+          200
+        ],
+        "units": "Pounds",
+        "discrete_nominal_to_yIndex": []
+    }
+}

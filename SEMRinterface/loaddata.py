@@ -599,6 +599,7 @@ def load_case_date(case_id, out_folder='all/', time_cut=1451688581000):
 
     lab_dict = {}  # dictionary that holds all lab
     vitals_dict = {}  # dictionary that holds all vitals and vent data
+    smart_dict = {} # ductionary that holds all smart devices
     recent_results = {}  # holds the most recent result of each lab, vital, and vent chart
     mtr, rtm = load_marstoroot()    # mars to root, root to mars
     groups, lab_group_order, rtn, rtt = load_rootgroupmember()  # root to name, root to table
@@ -675,6 +676,19 @@ def load_case_date(case_id, out_folder='all/', time_cut=1451688581000):
         vitals_dict[curr_root] = json.dumps([series, curr_data['text'], abs_ranges, norm_ranges,
                                              round(curr_recent_result[0], 1), curr_recent_result[1], discrete_text])
 
+    # Smart Devices #
+    for curr_root in groups["Smart Devices"]:
+        rollname = rtn[curr_root]
+        curr_data, curr_recent_result, abs_ranges = load_clinical_event(case_id, rollname, time_cut)
+        if abs_ranges[0] is None or abs_ranges[0] > default_ranges[curr_root][0]:  # if min is > absolute min
+            abs_ranges[0] = default_ranges[curr_root][0]
+        if abs_ranges[1] is None or abs_ranges[1] < default_ranges[curr_root][3]:  # if max is < absolute max
+            abs_ranges[1] = default_ranges[curr_root][3]
+        norm_ranges = snr[sex][rollname]
+        series, discrete_text = process_data_into_series(curr_data['datetime'], curr_data['value'], norm_ranges, [], [])
+        smart_dict[curr_root] = json.dumps([series, curr_data['text'], abs_ranges, norm_ranges,
+                                             round(curr_recent_result[0], 1), curr_recent_result[1], discrete_text])
+
     # Blood Pressure #
     curr_data, curr_recent_result, abs_ranges = load_bp(case_id, time_cut, numeric_bp)
     vitals_dict['VTDIAV'] = json.dumps([curr_data[0], [], abs_ranges[0], curr_recent_result[0]])
@@ -748,6 +762,7 @@ def load_case_date(case_id, out_folder='all/', time_cut=1451688581000):
         pickle.dump(demographics_dict, open(out_dir + 'demographics.p', 'wb'))
         pickle.dump(lab_dict, open(out_dir + 'labs.p', 'wb'))
         pickle.dump(vitals_dict, open(out_dir + 'vitals.p', 'wb'))
+        pickle.dump(smart_dict, open(out_dir + 'smart_devices.p', 'wb'))
         pickle.dump(global_time, open(out_dir + 'global_time.p', 'wb'))
         pickle.dump(recent_results, open(out_dir + 'recent_results.p', 'wb'))
         pickle.dump(json_meds_dict, open(out_dir + 'case_test_meds.p', 'wb'))

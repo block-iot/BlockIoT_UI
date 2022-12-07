@@ -1,4 +1,74 @@
 {
+  "1649174100": {
+    "display_group": "Vitals",
+    "display_name": "Smart Pill Bottle (Protonix)",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      100
+    ],
+    "original_name": "Smart Pill Bottle (Protonix)",
+    "units": "mg"
+  },
+  "1649174101": {
+    "display_group": "Vitals",
+    "display_name": "Smart Watch Atrial Fibulation (AFib)",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      100
+    ],
+    "original_name": "Smart Watch Atrial Fibulation (AFib)",
+    "units": ""
+  },
+  "1649174102": {
+    "display_group": "Vitals",
+    "display_name": "Smart Asthma Inhaler (Flovent)",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      100
+    ],
+    "original_name": "Smart Asthma Inhaler (Flovent)",
+    "units": "mcg"
+  },
+  "1649174103": {
+    "display_group": "Vitals",
+    "display_name": "Smart Albuterol",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      100
+    ],
+    "original_name": "Smart Albuterol",
+    "units": "mg"
+  },
+  "1649174104": {
+    "display_group": "Vitals",
+    "display_name": "Smart Weight Scale",
+    "dflt_normal_ranges": [
+      0.0,
+      0.0
+    ],
+    "dflt_y_axis_ranges": [
+      0,
+      100
+    ],
+    "original_name": "Smart Weight Scale",
+    "units": "Pounds"
+  },
   "1649174088": {
     "display_group": "Vitals",
     "display_name": "Heart Rate",
