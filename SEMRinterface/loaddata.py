@@ -664,7 +664,7 @@ def load_case_date(case_id, out_folder='all/', time_cut=1451688581000):
                                               curr_recent_result[1], discrete_text])
 
     # Vitals #
-    for curr_root in groups['Vitals']:
+    for curr_root in groups["Vitals"]:
         rollname = rtn[curr_root]
         curr_data, curr_recent_result, abs_ranges = load_clinical_event(case_id, rollname, time_cut)
         if abs_ranges[0] is None or abs_ranges[0] > default_ranges[curr_root][0]:  # if min is > absolute min
@@ -676,6 +676,7 @@ def load_case_date(case_id, out_folder='all/', time_cut=1451688581000):
         vitals_dict[curr_root] = json.dumps([series, curr_data['text'], abs_ranges, norm_ranges,
                                              round(curr_recent_result[0], 1), curr_recent_result[1], discrete_text])
 
+    
     # Smart Devices #
     for curr_root in groups["Smart Devices"]:
         rollname = rtn[curr_root]
