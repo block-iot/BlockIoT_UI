@@ -1,0 +1,7 @@
+{
+"title_bar": ["id", "age", "sex", "religion", "weight", "bmi", "ethnicity"],
+"physio_panel_groups": ["Data"],
+"med_panel_groups":["IV", "By_Mouth", "subQ", "IV_Push", "Home_Medication", "Duotube", "Each_Nostril", "SwishandSpit", "Miscellaneous", "Right_Eye", "Both_Eyes", "IVPB", "Topically", "Per_Rectum", "PO", "IV", "IV DRIP", "SC", "SL", "IM", "NG", "PR", "OU", "IVPCA", "IH", "TP", "DIALYS", "NU", "ORAL", "IV BOLUS", "PO/NG", "TD", "BOTH EYES", "PB", "ED", "REPLACE", "G TUBE", "ET", "DWELL", "IR", "VG", "LEFT EYE", "NEB", "IN", "ID", "AU", "OS", "IRR", "OD", "INHALATION", "IA", "AS", "AD", "J TUBE", "LOCK", "IT", "None", "IJ", "IP", "PL", "LEFT EAR", "NAS", "TT", "RIGHT EYE", "EX-VIVO", "NS", "BU", "BOTH EARS", "BUCCAL", "SUBCUT", "SCPUMP", "ND", "PERIPHNERVE", "AERO", "IO", "VT", "RIGHT EAR", "PO/IV", "OG", "PO/PR", "RECTAL", "SCPCA", "IVT", "IC", "IVS", "NG/OG", "ENTERAL TUBE ONLY ? NOT ORAL", "PO OR ENTERAL TUBE", "PO/OG", "INTERSPACE", "INTRAPERICARDIAL", "LUMBAR PLEXUS", "AXILLARY"],
+"lab_panel_groups": ["Hematology", "Blood Gas", "Chemistry"],
+"note_panel_groups": ["Progress_Note", "HandP", "OP", "ECHO", "RAD", "EKG", "Micro", "Procedures", "Discharge_summary","Visit_Summary", "Echo", "ECG", "Nursing", "Physician ", "Rehab_Services", "Nutrition", "Consult", "Respiratory ", "General"]
+}

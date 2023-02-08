@@ -1,0 +1,70 @@
+{
+    "1649174088": {
+        "display_text": "Heart Rate",
+        "med_data": [
+            {
+                "color": "#000000",
+                "marker": {
+                    "symbol": "circle"
+                },
+                "data": 79,
+                "name": "heart_rate"
+            }
+        ],
+        "y_axis_ranges": [
+            1.0,
+            100
+        ]
+    },
+    "1649174089": {
+        "display_text": "Blood Glucose",
+        "med_data": [
+            {
+                "color": "#000000",
+                "marker": {
+                    "symbol": "circle"
+                },
+                "data": 166,
+                "name": "Glucose"
+            }
+        ],
+        "y_axis_ranges": [
+            50,
+            200
+        ]
+    },
+    "1649174090": {
+        "display_text": "Systolic BP",
+        "med_data": [
+            {
+                "color": "#000000",
+                "marker": {
+                    "symbol": "circle"
+                },
+                "data": 99,
+                "name": "Systolic"
+            }
+        ],
+        "y_axis_ranges": [
+            100,
+            160
+        ]
+    },
+    "1649174091": {
+        "display_text": "Diastolic BP",
+        "med_data": [
+            {
+                "color": "#000000",
+                "marker": {
+                    "symbol": "circle"
+                },
+                "data": 52,
+                "name": "Diastolic"
+            }
+        ],
+        "y_axis_ranges": [
+            40,
+            80
+        ]
+    }
+}
