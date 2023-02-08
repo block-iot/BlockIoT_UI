@@ -1,2 +1,16 @@
+asgiref==3.6.0
+beautifulsoup4==4.11.2
+bleach==6.0.0
 Django==3.0.7
-python_dateutil==2.8.2
+django-markdownify==0.9.2
+importlib-metadata==6.0.0
+Markdown==3.4.1
+markdownify==0.11.6
+python-dateutil==2.8.2
+pytz==2022.7.1
+six==1.16.0
+soupsieve==2.3.2.post1
+sqlparse==0.4.3
+tinycss2==1.1.1
+webencodings==0.5.1
+zipp==3.12.1
