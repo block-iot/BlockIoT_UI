@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "SEMRproject/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "SEMRproject/wsgi.py"
+        }
+    ]
+}
