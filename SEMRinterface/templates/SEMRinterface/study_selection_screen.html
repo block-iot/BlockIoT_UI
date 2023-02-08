@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" href="/static/S.ico" type="image/x-icon" />
+
+    <style type="text/css">
+        .info-div {
+			font-family: "Arial";
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 1200px;
+            background-color: #DCDCDC;
+            text-align: left;
+            border-radius: 3px;
+        }
+        </style>
+
+    <script src="/static/jcode/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        is_full_screen();
+    });
+
+    function is_full_screen(){
+    // +1 is because firefox add an bar of pixel height 1 to the top of full screen that pops down the menu bar
+    // the pop down functionality is disabled when F11 is pressed three times.
+    if(screen.width === window.innerWidth && screen.height === window.innerHeight){
+        $('#fs').hide();
+    }else{
+        $('#fs').show();
+    }}
+    </script>
+
+</head>
+<body bgcolor="#E6E6FA">
+<div class="info-div">
+    <h1>Welcome to BlockIoT!</h1>
+	<p> 
+		Please select a study from the table below:
+	</p>
+	<table width="50%" border="1"><tr><th>Study</th></tr>
+    {% for study_id in list_study_id %}
+            <tr><th><a href="/SEMRinterface/{{ study_id }}/"><button>{{ study_id }}</button></a> </th></tr>
+    {% endfor %}
+    </table>
+
+</div>
+
+
+
+</body>
+</html>
