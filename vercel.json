@@ -7,7 +7,7 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/SEMRinterface/(.*)",
             "dest": "SEMRproject/wsgi.py"
         }
     ]
