@@ -5,8 +5,8 @@
     <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
     <title>SEMR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/SEMRinterface/static/css/bootstrap.css" rel="stylesheet">
-    <link href="/SEMRinterface/static/custom_css/bs_3.css" rel="stylesheet">
+    <link href="${process.env.VERCEL_URL}/static/css/bootstrap.css" rel="stylesheet">
+    <link href="${process.env.VERCEL_URL}/static/custom_css/bs_3.css" rel="stylesheet">
 	<link rel="icon" href="/static/S.ico" type="image/x-icon" />
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -15,11 +15,11 @@
     <script src="https://code.jquery.com/jquery.js" type="text/javascript"></script>
     <script src="http://code.highcharts.com/stock/highstock.js"  type="text/javascript"></script>
     Otherwise load local versions below-->
-    <script src="/static/jcode/jquery.js"></script>
-    <script src="/static/jcode//highstock.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/emr_3.js"></script>
-	<script src="/static/js/iot_hr.json"></script>
+    <script src="${process.env.VERCEL_URL}/static/jcode/jquery.js"></script>
+    <script src="${process.env.VERCEL_URL}/static/jcode//highstock.js"></script>
+    <script src="${process.env.VERCEL_URL}/static/js/bootstrap.min.js"></script>
+    <script src="${process.env.VERCEL_URL}/static/js/emr_3.js"></script>
+	<script src="${process.env.VERCEL_URL}/static/js/iot_hr.json"></script>
 <!--<script src="../../resources/research_study/cases_all/249/iot_hr.json"></script>-->
 </head>
 <body>
